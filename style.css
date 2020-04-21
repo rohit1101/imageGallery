@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
+}
+
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  padding: 2rem 0;
+}
+
+.albums {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  margin: 1rem 1rem;
+}
+
+.album {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 150px 1fr;
+  background-color: rgba(200, 200, 200, 0.5);
+  padding: 2rem;
+  align-items: center;
+}
+
+.album__artwork {
+  width: 100%;
+}
+
+.foot {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 2rem 0;
+}
+
+.foot a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s;
+}
+
+.foot a:hover {
+  background-color: rgba(200, 200, 200, 0.5);
+  border-bottom: 3px solid rgb(230, 220, 134);
+}
+
+@media (max-width: 700px) {
+  .heading {
+    font-size: 2.8rem;
+    font-weight: 700;
+    border-bottom: 5px solid goldenrod;
+    padding: 2rem 1.1rem;
+  }
+
+  .albums {
+    grid-template-columns: 100%;
+  }
+
+  .album {
+    grid-template-columns: 120px 1fr;
+    padding: 2rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  .foot {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 2rem 0;
+  }
+}
